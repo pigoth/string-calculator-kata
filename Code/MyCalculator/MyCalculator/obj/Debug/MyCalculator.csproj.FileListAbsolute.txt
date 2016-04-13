@@ -1,0 +1,5 @@
+E:\GitHubRoot\KataStringCalculator\Code\MyCalculator\MyCalculator\bin\Debug\MyCalculator.dll
+E:\GitHubRoot\KataStringCalculator\Code\MyCalculator\MyCalculator\bin\Debug\MyCalculator.pdb
+E:\GitHubRoot\KataStringCalculator\Code\MyCalculator\MyCalculator\obj\Debug\MyCalculator.csprojResolveAssemblyReference.cache
+E:\GitHubRoot\KataStringCalculator\Code\MyCalculator\MyCalculator\obj\Debug\MyCalculator.dll
+E:\GitHubRoot\KataStringCalculator\Code\MyCalculator\MyCalculator\obj\Debug\MyCalculator.pdb
