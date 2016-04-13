@@ -68,5 +68,14 @@ namespace MyCalculator.Test
 
         }
 
+        [TestMethod]
+        public void AddNumbersWithCustomSeparator()
+        {
+            var result = KataStringCalculator.Add("1\n2;3", ';');
+            const int expectedResult = 6;
+            Assert.AreEqual(expectedResult, result);
+        }
+
+
     }
 }

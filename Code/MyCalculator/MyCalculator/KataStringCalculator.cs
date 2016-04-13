@@ -8,16 +8,16 @@ namespace MyCalculator
 {
     public static class KataStringCalculator
     {
-
+       private static  char _secondSeparator = '\n';
         public static string WrongInputFormat = "Wrong input: {0}";
 
-        public static int Add(string numbers, char firstSeparator = ',', char secondSeparator = '\n')
+        public static int Add(string numbers, char firstSeparator = ',')
         {
             var rtnValue = 0;
 
             if (!string.IsNullOrEmpty(numbers))
             {
-                var splittedNumbers = numbers.Split(firstSeparator, secondSeparator);
+                var splittedNumbers = numbers.Split(firstSeparator, _secondSeparator);
 
                 if(splittedNumbers.Contains(string.Empty))
                     throw new ArgumentException(string.Format(WrongInputFormat, numbers) );
