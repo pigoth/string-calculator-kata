@@ -22,7 +22,6 @@ namespace MyCalculator
                 if (splittedNumbers.Contains(string.Empty))
                     throw new ArgumentException(string.Format(WrongInputFormat, numbers));
 
-
                 foreach (var stringNumber in splittedNumbers)
                 {
                     int numberToAdd;
@@ -30,6 +29,9 @@ namespace MyCalculator
                     {
                         if (numberToAdd < 0)
                             throw new NegativeNumberException(numberToAdd);
+
+                        if (numberToAdd > 1000)
+                            continue;
 
                         rtnValue += numberToAdd;
                     }

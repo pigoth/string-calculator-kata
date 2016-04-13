@@ -94,5 +94,13 @@ namespace MyCalculator.Test
             }
         }
 
+        [TestMethod]
+        public void IgnoreBigNumbers()
+        {
+            var result = KataStringCalculator.Add("1,1001");
+            const int expectedResult = 1;
+            Assert.AreEqual(expectedResult, result);
+        }
+
     }
 }
