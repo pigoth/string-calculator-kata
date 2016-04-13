@@ -26,7 +26,7 @@ namespace MyCalculator.Test
         public void AddTwoNumbersSeparatedByComma()
         {
             var result = KataStringCalculator.Add("1,2");
-            const int expectedResult = 0;
+            const int expectedResult = 3;
             Assert.AreEqual(expectedResult, result);
         }
     }

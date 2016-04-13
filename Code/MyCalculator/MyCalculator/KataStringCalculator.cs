@@ -19,7 +19,7 @@ namespace MyCalculator
                 {
                     int numberToAdd;
                     if (int.TryParse(stringNumber, out numberToAdd))
-                        rtnValue += rtnValue;
+                        rtnValue += numberToAdd;
                 }
             }
 
