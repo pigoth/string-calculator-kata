@@ -29,5 +29,16 @@ namespace MyCalculator.Test
             const int expectedResult = 3;
             Assert.AreEqual(expectedResult, result);
         }
+
+
+        [TestMethod]
+        public void AddUnknowNumbersSeparatedByComma()
+        {
+            var result = KataStringCalculator.Add("1,2,3");
+            const int expectedResult = 6;
+            Assert.AreEqual(expectedResult, result);
+        }
+
+
     }
 }
