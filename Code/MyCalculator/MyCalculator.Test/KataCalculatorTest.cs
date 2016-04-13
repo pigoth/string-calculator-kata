@@ -76,6 +76,23 @@ namespace MyCalculator.Test
             Assert.AreEqual(expectedResult, result);
         }
 
+        [TestMethod]
+        public void AddNegativeNumber()
+        {
+            const string inputNumbers = "2,-1,3";
+            try
+            {
+                var result = KataStringCalculator.Add(inputNumbers);
+            }
+            catch (NegativeNumberException ae)
+            {
+                Assert.IsTrue(!string.IsNullOrEmpty(ae.Message));
+            }
+            catch (Exception)
+            {
+                Assert.Fail();
+            }
+        }
 
     }
 }
